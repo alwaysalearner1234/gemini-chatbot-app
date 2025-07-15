@@ -2,7 +2,7 @@
 import streamlit as st
 import google.generativeai as genai
 
-genai.configure(api_key=st.secrets["AIzaSyCEJHfN7FC96Qijsni9aDXqt7Bvu9RKCa4"])
+genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
 
 if "messages" not in st.session_state:
     st.session_state.messages = []
